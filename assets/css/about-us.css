@@ -91,6 +91,14 @@
   margin-top: 40px;
 }
 
+.btn-get-app:hover {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6363636364;
+  color: #234cad;
+  border: solid 2px #234cad;
+}
+
 .explore-pricing-text{
   color: #234cad;font-family: Nunito, 'Source Sans Pro';font-weight: 700;
 }
