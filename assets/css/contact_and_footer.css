@@ -1,0 +1,260 @@
+:root {
+    --color-primary: #234CAD;
+}
+
+body {
+    font-family: 'Nunito';
+}
+
+
+
+/*---------------------------- Contact & Newsletter -------------------------------------*/
+
+
+.jumbotron-footer{
+    background-image: url(../img/contact-us/BackgroundJumbotron-Contact.png);
+    background-size: cover;
+    color: var(--color-primary);
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter h1,
+.newsletter p {
+    text-align: center;
+}
+
+
+.newsletter h1 {
+    color: var(--color-primary);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.newsletter p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    width: 400px;
+}
+
+
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input {
+    color: var(--color-primary);
+    /* font-size: 1.1rem; */
+    font-weight: 500;
+    width: 500px;
+    height: 65px;
+}
+
+input:focus{
+    outline: 2px solid var(--color-primary);
+}
+
+input::placeholder {
+    color: var(--color-primary);
+}
+
+/* Button on top of the Input */
+.wrapper {
+    /* width: 400px;
+    max-width: 100%; */
+    position: relative;
+}
+
+.wrapper input {
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0px;
+    
+    /* width: 199px;
+    height: 29px;
+    top: 18px;
+    left: 25px; */
+    opacity: 0.5px;
+}
+
+.wrapper button {
+    background: var(--color-primary);
+    border-radius: 15px;
+    aspect-ratio: 1;
+    height: 80%;
+    border: 2px solid #FFFFFF;
+    
+    position: absolute;
+    top: 10%;
+    left: 88%;
+}
+
+.wrapper img {
+    width: 9px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    top: 29%;
+    right: 15px;
+}
+
+/*----------------------------------------- footer -------------------------------------*/
+
+footer .container{
+    font-family: 'Nunito';
+}
+
+footer .container h3{
+    font-family: 'Nunito';
+    color: #234CAD;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49px; /* 163.333% */
+}
+
+footer .container p{
+    font-family: 'Nunito';
+    color: #234CAD;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; /* 161.111% */
+}
+
+footer .container .Copyright-item{
+    width: 163px;
+}
+
+footer .footer-items{
+    margin: 60px auto 10px;
+    padding: 10px 30px 15px;
+}
+
+footer .footer-items ul{
+    list-style: none;
+}
+
+footer .text-items-footer a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*========================================== Media Query ==============================================*/
+
+/* responsive phone Samsung S20 */
+@media (max-width: 468px) {
+    .newsletter h1 {
+        font-size: 29px;
+    }
+
+    .newsletter p {
+        font-size: 17px;
+        padding: 0 10px;
+    }
+
+    input {
+        width: 300px;
+        height: 45px;
+    }
+
+    .wrapper button {
+        top: 9%;
+        left: 86%;
+    }
+
+    footer .row{
+        margin-right: 0;
+    }
+
+    footer .footer-items{
+        text-align: center;
+        margin: auto;
+        padding-left: 0;
+    }
+
+    footer .footer-items .Copyright-item{
+        width: auto;
+    }
+}
+
+/* Mobile phone */
+@media (min-width: 469px) and (max-width: 767px) {
+    .newsletter h1 {
+        font-size: 40px;
+    }
+
+    input {
+        width: 350px;
+        height: 55px;
+    }
+
+    .wrapper button {
+        top: 9%;
+        left: 86%;
+    }
+
+    footer .row{
+        margin-right: 0;
+    }
+
+    footer .footer-items{
+        text-align: center;
+        margin: auto;
+        padding-left: 0;
+    }
+
+
+    footer .footer-items .Copyright-item{
+        width: auto;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .newsletter h1 {
+        font-size: 40px;
+    }
+
+    input {
+        width: 350px;
+        height: 55px;
+    }
+
+    .wrapper button {
+        top: 9%;
+        left: 86%;
+    }
+
+    footer .footer-items{
+        margin-top: 10px;
+        padding: 0px 83px 10px;
+    }
+
+}
