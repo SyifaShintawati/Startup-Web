@@ -360,7 +360,7 @@
   </section>
 
   <!-- about-->
-  <section class="about-us-section container">
+  <section id="about" class="about-us-section container">
     <div class="row">
       <div class="col-md-6 mt-4">
         <div class="text-left increase-left-section">
@@ -566,16 +566,17 @@
             Receive latest news, updates, discounts and many other things every week.
           </p>
           <div class="wrapper">
-            <input type="text" placeholder="Enter your email" />
-            <button class="buttonInputLetter">
-              <img src="assets/img/contact-us/IconInputLetter.png" alt="input">
-            </button>
+            <form action="">
+              <input type="text" placeholder="Enter your email address" id="emailaddress"/>
+              <button type="submit" class="buttonInputLetter" id="buttonInputLetter">
+                <img src="assets/img/contact-us/IconInputLetter.png" alt="input">
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </div>
     <!-- Akhir jumbotron contact & newsletter -->
-
   </section>
 
   <!-- footer -->
@@ -658,7 +659,6 @@
         </div>
       </div>
     </div>
-
   </footer>
 
   <!-- script -->
