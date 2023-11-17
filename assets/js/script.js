@@ -1,3 +1,15 @@
+//active link
+let menuHeader = document.getElementById("menuHeader");
+let menu = menuHeader.getElementsByClassName("nav-link");
+for (let i = 0; i < menu.length; i++) {
+  menu[i].addEventListener("click", function() {
+  let current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+//end active link
+
 //  Javascript untuk input email pada section contact us 
 document.addEventListener("DOMContentLoaded", function () {
     // membuat variabel input dan button untuk mengambil id dan class nya
