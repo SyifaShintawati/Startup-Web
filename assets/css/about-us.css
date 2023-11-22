@@ -35,6 +35,14 @@
   line-height: 25px;
   font-size: 9px;
   }
+  .about-us-rigth-title{
+    font-size: 12px;
+    margin-left: 15px;
+  }
+  .about-us-rigth-detail{
+    font-size: 9px !important;
+    margin-left: 15px;
+  }
 }
 .about-us-card-section{
   background-color: #EEF3FD; border-radius: 40px;
